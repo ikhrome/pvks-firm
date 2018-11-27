@@ -1,0 +1,50 @@
+body {
+	font-family: Arial;
+}
+a {
+	color: #000;
+}
+a:visited {
+	color: #333;
+}
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+header {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+header nav ul {
+	display: -webkit-flex; 
+	display: flex;
+	background: #FFD7A7;
+	padding-left: 0;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+header nav ul li {
+	list-style: none;
+}
+
+header nav ul li a {
+	padding: 1em;
+	display: block;
+	color: #9B4222;
+	border-right: 1px solid #FFAB51;
+	background: rgba(255, 171, 81, .3);
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	text-align: underline;
+}
+
+footer {
+	margin-top: 15px;
+	border-top: 1px solid #333;
+	padding-top: 10px;
+}
