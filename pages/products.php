@@ -1,4 +1,4 @@
-<?php $title = "Главная"; include "partials/header.php"; ?>
+<?php $title = "Главная"; proceed_header(); ?>
 <h1>Наши товары</h1>
 <p>Для покупки товара сделайтеглубокий вдох</p>
 <table border="1" width="100%" style="border-collapse: collapse;">
@@ -26,4 +26,4 @@
 		?>
 	</tbody>
 </table>
-<?php include "partials/footer.php"; ?>
+<?php proceed_footer(); ?>

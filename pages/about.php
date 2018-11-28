@@ -1,3 +1,3 @@
-<?php $title = "О нас"; include "partials/header.php"; ?>
+<?php $title = "О нас"; proceed_header(); ?>
 <h1>About page</h1>
-<?php include "partials/footer.php"; ?>
+<?php proceed_footer(); ?>

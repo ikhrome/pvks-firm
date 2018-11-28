@@ -1,4 +1,4 @@
-<?php $title = "Контакты"; include "partials/header.php"; ?>
+<?php $title = "Контакты"; proceed_header(); ?>
 <h1>Обратная связь</h1>
 <form method="post">
 	<table border="0">
@@ -35,4 +35,4 @@
 		}
 	}
 ?>
-<?php include "partials/footer.php"; ?>
+<?php proceed_footer(); ?>

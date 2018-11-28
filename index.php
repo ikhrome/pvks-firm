@@ -1,17 +1,15 @@
-<?php 
-$page = htmlspecialchars($_GET['page']);
+<?php
+ob_start();
+require 'functions.php';
+$routes = require_once 'routes.php';
+$page = htmlspecialchars($_REQUEST['page']);
 
-switch($page) {
-	case 'about':
-		include "pages/about.php";
-		break;
-	case 'contact':
-		include "pages/contact.php";
-		break;
-	case 'products':
-		include "pages/products.php";
-		break;
-	default:
-		include 'pages/index.php';
-		break;
+if($page == '' || $page == null) {
+	include 'pages/index.php';
+} elseif(isset($routes[$page])) {
+	include $routes[$page] . ".php";
+} else {
+	include "pages/404.php";
 }
+
+ob_end_flush();

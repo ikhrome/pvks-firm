@@ -1,3 +1,3 @@
-<?php $title = "Администрирование"; include "partials/header.php"; ?>
+<?php $title = "Администрирование"; proceed_header(); ?>
 
-<?php include "partials/footer.php"; ?>
+<?php proceed_footer(); ?>
